@@ -8,7 +8,7 @@ Debug Shop is a repo with a lot of bugs in it... your goal is to find and fix th
 * Understand and Interpret Error/Failure messaages
 
 ### Setup
-This repository uses Ruby 3.2.2 and Rails 7.0.6. 
+This repository uses Ruby 3.2.2 and Rails 7.1.2. 
 
 * Clone this repo to your local computer
 * Run `bundle install`
