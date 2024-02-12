@@ -22,11 +22,11 @@ RSpec.describe "As a Visitor" do
 
       click_on "Update Merchant Info"
 
-      fill_in 'Name', with: "Meg"
-      fill_in 'Address', with: "1223 Perry St."
-      fill_in 'City', with: "Denver"
-      fill_in 'State', with: "CO"
-      fill_in 'Zip', with: 80204
+      fill_in 'name', with: "Meg"
+      fill_in 'address', with: "1223 Perry St."
+      fill_in 'city', with: "Denver"
+      fill_in 'state', with: "CO"
+      fill_in 'zip', with: 80204
 
       click_button "Update Merchant"
 
