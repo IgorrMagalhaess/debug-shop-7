@@ -1,22 +1,22 @@
-<%= link_to "Items", '/items' %>
-<%= link_to "Merchants", '/merchants' %>
+<%= link_to "Items", "/items" %>
+<%= link_to "Merchants", "/merchants" %>
 
-<h2>Edit <%= item.name %></h2>
-<%= form_with url: "/items/#{item.id}", local: true do |form| %>
+<h2>Edit <%= @item.name %></h2>
+<%= form_with url: "/items/#{@item.id}", method: :patch, local: true do |form| %>
   <%= form.label :name %>
-  <%= form.text_field :name , "#{item.name}"%>
+  <%= form.text_field :name, value: @item.name %>
 
   <%= form.label :description %>
-  <%= form.text_field :description, "#{item.description}" %>
+  <%= form.text_field :description, value: @item.description  %>
 
   <%= form.label :price %>
-  <%= form.text_field :price, "#{item.price}" %>
+  <%= form.text_field :price, value: @item.price  %>
 
   <%= form.label :image %>
-  <%= form.text_field :image, "#{item.image}" %>
+  <%= form.text_field :image, value: @item.image  %>
 
   <%= form.label :inventory %>
-  <%= form.text_field :inventory "#{item.inventory}" %>
+  <%= form.text_field :inventory, value: @item.inventory  %>
 
   <%= form.submit 'Update Item' %>
 <% end %>

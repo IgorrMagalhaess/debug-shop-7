@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
   def update
     item = Item.find(params[:id])
     item.update(item_params)
-    redirect_to "/items/params[:id]"
+    redirect_to "/items/#{item.id}"
   end
 
   def index
