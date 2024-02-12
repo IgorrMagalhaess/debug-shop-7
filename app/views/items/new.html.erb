@@ -2,7 +2,7 @@
 <%= link_to "Merchants", '/merchants' %>
 
 <h2><%=link_to @merchant.name, "/merchants/#{@merchant.id}"%>, Create a New Item</h2>
-<%= form_with url: "/merchants/#{@merchant.id}/items" do |form| %>
+<%= form_with url: "/merchants/#{@merchant.id}/items", method: :post, local: true do |form| %>
   <%= form.label :name %>
   <%= form.text_field :name %>
 
